@@ -38,10 +38,6 @@ public abstract int enableAudioEffect(boolean enabled, int effectType);
 1. 启用房间内所有用户的音量上报 [enableAudioVolumeIndication](http://www.3ttech.cn/index.php?menu=72&type=Android#enableAudioVolumeIndication) 
 2. 本地静音/取消静音 [muteLocalAudioStream](http://www.3ttech.cn/index.php?menu=72&type=Android#muteLocalAudioStream) 
 
-#### 注意事项
-
-1. 接口 **setChannelProfile** 需要在 **setClientRole** 之前设置，否则可能会影响 **setClientRole** 接口的逻辑
-2. 如有上麦/下麦的场景需求，其流程是通过 **setClientRole** 接口转换角色身份来实现，即上麦将角色转为副播，下麦将角色转为观众。
 
 # Android 使用说明
 1. 引用 SDK 的 aar包，在app项目下的 **build.gradle** 文件中添加红框中相应代码来引用。
