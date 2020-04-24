@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="297dp"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center">
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="17dp"
+		android:text="音效管理"
+		android:textColor="#6a6a6a"
+		android:textSize="18sp" />
+
+	<RadioGroup
+		android:id="@+id/audio_effect_rg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="15dp"
+		android:paddingBottom="17dp">
+
+		<RadioButton
+			android:id="@+id/audio_effect_delay"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:text="澡堂（回音壁）" />
+
+		<RadioButton
+			android:id="@+id/audio_effect_pitchshift_low"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:text="低沉 （大叔）" />
+
+		<RadioButton
+			android:id="@+id/audio_effect_pitchshift_hi"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:text="尖锐 （萝莉）" />
+
+		<RadioButton
+			android:id="@+id/audio_effect_robot"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:text="机器人" />
+
+		<RadioButton
+			android:id="@+id/audio_effect_whisper"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:text="耳语 （沙沙声）" />
+
+		<RadioButton
+			android:id="@+id/audio_effect_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:text="关闭" />
+	</RadioGroup>
+</RelativeLayout>
